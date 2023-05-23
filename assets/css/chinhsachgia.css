@@ -267,7 +267,9 @@
     position: relative;
     display: inline-block;
   }
-
+.nenden{
+  width: 100%;
+}
   .anhrun {
     transform: translate(-50%, -50%) scale(0.5);
     width: 200%;
@@ -334,7 +336,7 @@
 
   .nento img {
     display: block;
-    max-width: 300%;
+    max-width: 100%;
     position: relative;
   }
 
