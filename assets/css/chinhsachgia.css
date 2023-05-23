@@ -334,8 +334,7 @@
 
   .nento img {
     display: block;
-    max-width: 300%;
-    overflow: hidden;
+    max-width: 100%;
     position: relative;
   }
 
