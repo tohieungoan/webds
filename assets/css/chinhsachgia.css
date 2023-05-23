@@ -182,11 +182,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    z-index: -1;
+    z-index: 0; /* giá trị z-index của ảnh thấp hơn phần tử chứa nội dung */
     width: 50%;
     height: 100%;
     opacity: 0.5;
-    background-image: url('./assets/img/run.png');
+    background-image: url('../img/run.png');
     background-size: cover;
     background-position: top center;
   }
