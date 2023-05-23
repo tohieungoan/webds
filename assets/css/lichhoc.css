@@ -1,0 +1,28 @@
+.selectpt {
+    width: 20em;
+    height: 3em;
+    text-align: center;
+    font-size: medium;
+    font-weight: 400;
+
+}
+
+.optionpt {
+
+    font-size: large;
+    font-weight: 400;
+}
+
+.btndangky {
+    position: relative;
+    
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: red;
+}
+.footer{
+    margin-top: 30px;
+}
