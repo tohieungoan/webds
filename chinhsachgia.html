@@ -684,15 +684,29 @@
       });
       window.addEventListener('resize', function() {
   var screenWidth = window.innerWidth;
-  if (screenWidth <= 360) {
+  if (screenWidth <= 549) {
+    var div3 = document.querySelector('.div3');
+    var bottomvl = window.getComputedStyle(div3);
     var nenden = document.querySelector('.nenden');
     var height = nenden.clientHeight;
+    var currentBottom = parseFloat(bottomvl.getPropertyValue('bottom'));
     if (screenWidth < height + 1) {
-      nenden.style.height = (height + 10) + 'px';
+      nenden.style.height = (height + 5) + 'px';
+      div3.style.bottom = (currentBottom + 1) + '%';
     }
   }
 });
-Tron
+
+// window.addEventListener('resize', function() {
+//   var screenWidth = window.innerWidth;
+//   if (screenWidth <= 549) {
+//     var div3 = document.querySelector('.div3');
+//     var bottomvl = window.getComputedStyle(div3);
+//     var currentBottom = parseFloat(bottomvl.getPropertyValue('bottom'));
+//     div3.style.bottom = (currentBottom + 1) + '%';
+//   }
+// });
+
       
     </script>
 </body>
