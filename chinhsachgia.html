@@ -545,8 +545,8 @@
       </table>
     </div>
 
-    <div class="div3">
-      <table class="tb3">
+    <div class="div3" style="margin-bottom: 10%;">
+      <table class="tb3" >
         <tr>
           <div class="anhgymnu">
             <img class="anhg" src="./assets/img/gymnu.png" alt="Ảnh">
@@ -682,6 +682,18 @@
           year.style.opacity = '0.5';
         }
       });
+      window.addEventListener('resize', function() {
+  var screenWidth = window.innerWidth;
+  if (screenWidth <= 360) {
+    var nenden = document.querySelector('.nenden');
+    var height = nenden.clientHeight;
+    if (screenWidth < height + 1) {
+      nenden.style.height = (height + 10) + 'px';
+    }
+  }
+});
+Tron
+      
     </script>
 </body>
 
