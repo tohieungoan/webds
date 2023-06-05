@@ -432,7 +432,7 @@
               var name = document.getElementById("name").value;
               var bmi = weight / (height * height);
           
-              const token = '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';
+              const token = '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';
           
               fetch('https://api.openai.com/v1/chat/completions', {
                 method: 'POST',
@@ -445,11 +445,12 @@
                   "messages": [{"role": "user", "content": "Tôi tên là " + name + ", năm nay " + age + " tuổi, giới tính " + gender + ", chỉ số BMI của tôi là " + bmi.toFixed(2) + ", hãy cho tôi những lời khuyên về dinh dưỡng và tập luyện một cách ngắn gọn"}]
                 })
               })
-              .then(response => response.json())
-              .then(data => {
-                var message = data.choices[0].text;
+              .then(response =>{
+    return response.json();
+}).then(data => {
+                var message = data.choices[0].message.content;
                 var result = "Tên: " + name + "\n" + "Tuổi: " + age + "\n" + "Giới tính: " + gender + "\n" + "Chỉ số BMI: " + bmi.toFixed(2) + "\n" + "Lời khuyên: " + message;
-                prompt(result);
+                alert(result);
               });
             }
           </script>
